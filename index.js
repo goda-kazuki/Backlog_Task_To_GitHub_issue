@@ -7,7 +7,7 @@ const octokit = new Octokit({
 exports.handler = async (event) => {
   const eventBody = JSON.parse(event.body);
 
-  const issues = await octokit.rest.issues.create({
+  const issue = await octokit.rest.issues.create({
     owner: 'goda-kazuki',
     repo: 'Backlog_Task_To_GitHub_issue',
     title: eventBody.content.summary,
@@ -15,8 +15,8 @@ exports.handler = async (event) => {
   });
 
   const response = {
-    statusCode: issues.status,
-    body: JSON.stringify(issues.data.url),
+    statusCode: issue.status,
+    body: JSON.stringify(issue.data.url),
   };
   return response;
 };
