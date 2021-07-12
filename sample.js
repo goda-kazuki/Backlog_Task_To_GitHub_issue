@@ -1,7 +1,7 @@
 const {Octokit} = require("@octokit/rest");
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: "aa",
 });
 
 createIssue()
