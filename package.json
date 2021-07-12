@@ -1,0 +1,23 @@
+{
+  "name": "backlog_task_to_github_issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.js",
+  "dependencies": {
+    "@octokit/rest": "^18.6.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goda-kazuki/Backlog_Task_To_GitHub_issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goda-kazuki/Backlog_Task_To_GitHub_issue/issues"
+  },
+  "homepage": "https://github.com/goda-kazuki/Backlog_Task_To_GitHub_issue#readme"
+}
